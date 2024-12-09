@@ -1,0 +1,11 @@
+/* .screen_transition1{ position: fixed; top: 0; bottom: 0; right: 100%; width: 100vw; height: 100vh; z-index: 30; background-color: var(--dark-primary); transform: rotateZ(45deg); }
+.screen_transition2{ position: fixed; top: 0; bottom: 0; right: 100%; width: 100vw; height: 100vh; z-index: 20; background-color: var(--light-primary); transform: rotateZ(45deg); }
+.screen_transition3{ position: fixed; top: 0; bottom: 0; right: 100%; width: 100vw; height: 100vh; z-index: 11; background-color: var(--dark-primary); transform: rotateZ(45deg); } */
+
+.splash > div{ height: 50vh; width: 100vw; position: fixed; left: 0; right: 0; z-index: 9; overflow: hidden; }
+.splash > div.black{ top: 0; background-color: #222; color: var(--light); }
+.splash > div.black h1{ position: absolute; bottom: 0; left: 50%; translate: -50% 50%; font-size: 15vmin; }
+.splash > div.white{ bottom: 0; color: #222; background-color: var(--light); }
+.splash > div.white h1{ position: absolute; top: 0; left: 50%; translate: -50% -50%; font-size: 15vmin; }
+.splash > div div{ height: 3px; width: 45vw; top: 30%; left: 50%; translate: -50% 0; border-radius: 50px; }
+.splash > div div span{ height: 100%; width: 33%; background-color: #222; display: inline-block; }

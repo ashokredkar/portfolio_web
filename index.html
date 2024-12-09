@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Ashok Redkar</title>
+  </head>
+  <body>
+    <div id="blob"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const blob = document.getElementById("blob");
+      document.body.onpointermove = (e) => {
+        const { clientX, clientY } = e;
+        blob.animate({
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        }, { duration: 3500, fill: "forwards" });
+      }
+    </script>
+  </body>
+</html>
